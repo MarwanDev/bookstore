@@ -1,9 +1,9 @@
 import React from 'react';
 
-function App() {
+function Categories() {
   return (
     <div />
   );
 }
 
-export default App;
+export default Categories;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function App() {
+function Module() {
   return (
     <div />
   );
 }
 
-export default App;
+export default Module;
