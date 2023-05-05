@@ -9,9 +9,12 @@
     "@testing-library/user-event": "^13.5.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-widgets": "^5.8.4",
     "sass": "^1.62.1",
     "web-vitals": "^2.1.4"
   },
