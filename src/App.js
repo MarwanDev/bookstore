@@ -5,7 +5,9 @@ import { Layout } from './components';
 function App() {
   return (
     <Router>
-      <Layout />
+      <main>
+        <Layout />
+      </main>
     </Router>
   );
 }

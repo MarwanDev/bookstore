@@ -1,27 +1,29 @@
 /* eslint-disable import/no-cycle */
 import React from 'react';
-import { BookState, BookForm } from '../../components';
+import { useSelector, useDispatch } from 'react-redux';
 
-const booksList = [
-  {
-    id: 1,
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    genre: 'Action',
-  },
-  {
-    id: 2,
-    title: 'Dune',
-    author: 'Frank Herbert',
-    genre: 'Science Fiction',
-  },
-];
+import { removeBook } from '../../redux/books/BooksSlice';
+import { BookForm, BookState } from '../../components';
 
 function Books() {
+  const books = useSelector((state) => state.book.books);
+
+  const dispatch = useDispatch();
+  const clickHandler = (e) => {
+    dispatch(removeBook(e.target.id));
+  };
+
   return (
     <>
-      {booksList.map((book) => (
-        <BookState key={book.id} book={book} />
+      {books.map((book) => (
+        <BookState
+          key={book.bookId + book.author}
+          title={book.title}
+          author={book.author}
+          genre={book.genre}
+          id={book.bookId}
+          onClick={clickHandler}
+        />
       ))}
       <BookForm />
     </>
