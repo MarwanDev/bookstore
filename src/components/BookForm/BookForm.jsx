@@ -4,7 +4,7 @@ import 'react-widgets/scss/styles.scss';
 import './BookForm.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useState } from 'react';
-import { addBook } from '../../books/BooksSlice';
+import { addBook } from '../../redux/books/BooksSlice';
 
 function BookForm() {
   const [title, setTitle] = useState('');

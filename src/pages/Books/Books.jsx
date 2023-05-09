@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { removeBook } from '../../books/BooksSlice';
+import { removeBook } from '../../redux/books/BooksSlice';
 import { BookForm, BookState } from '../../components';
 
 function Books() {
