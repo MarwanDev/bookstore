@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import DropdownList from 'react-widgets/DropdownList';
 import 'react-widgets/scss/styles.scss';
 import './BookForm.scss';
