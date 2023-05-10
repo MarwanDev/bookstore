@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import DropdownList from 'react-widgets/DropdownList';
 import 'react-widgets/scss/styles.scss';
 import './BookForm.scss';
@@ -22,16 +21,17 @@ function BookForm() {
       genre,
     }));
     e.preventDefault();
+    document.getElementById('bookForm').reset();
   };
 
   return (
     <>
       <h1>add newe book</h1>
-      <form action="" onSubmit={submitHandler}>
+      <form id="bookForm" onSubmit={submitHandler}>
         <input type="text" placeholder="Book Title" onChange={(e) => setTitle(e.target.value)} name="title" />
         <input type="text" placeholder="Book Author" onChange={(e) => setAuthor(e.target.value)} name="author" />
         <DropdownList
-          defaultValue="Action"
+          defaultValue={genre}
           data={['Action', 'Sci-Fi', 'Horror', 'Mystery']}
           name="genre"
           onChange={(genre) => setGenre(genre)}
