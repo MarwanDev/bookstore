@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
+import PersonIcon from '@mui/icons-material/Person';
 
 function Navbar() {
   return (
@@ -25,6 +26,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
+      <PersonIcon className="person-icon" color="#0290ff" />
     </nav>
   );
 }

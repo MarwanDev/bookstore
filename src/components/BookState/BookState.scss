@@ -1,3 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .book-container {
   display: flex;
+  flex-direction: row;
+  padding: 6px 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  gap: 300px;
+}
+
+.book-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-genre {
+  margin-left: 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #121212;
+  width: 4.313rem;
+  height: 1.125rem;
+  opacity: 0.5;
+  margin-bottom: 0.2rem;
+}
+
+.book-title {
+  margin: 0.2rem 0;
+  margin-left: 40px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-author {
+  margin: 0.2rem 0;
+  margin-left: 40px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.options-container {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+
+  button {
+    background-color: #fff;
+    border: none;
+    padding-right: 8px;
+    padding-left: 0;
+    border-right: solid 0.5px #e8e8e8;
+    font-family: RobotoSlab, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4386bf;
+  }
+}
+
+.book-progress-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* stylelint-disable-next-line */
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#307bbe 75%, #f2f6f9 0);
+  }
+}
+
+.chapter-container {
+  margin-left: 28rem;
+}
+
+.crnt-ch-head {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.crnt-ch {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.update-btn {
+  width: 8.938rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0290ff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.book-progress-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 7px;
+}
+
+.book-progress-percentage {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-left: 5px;
+  color: #121212;
+}
+
+.book-progress-status {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  color: #121212;
+  text-transform: uppercase;
 }
