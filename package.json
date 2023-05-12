@@ -4,10 +4,15 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.21.8",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "prop-types": "^15.8.1",
@@ -20,6 +25,7 @@
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "sass": "^1.62.1",
+    "util": "^0.12.5",
     "uuid": "^9.0.0",
     "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
