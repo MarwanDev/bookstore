@@ -1,7 +1,7 @@
 import DropdownList from 'react-widgets/DropdownList';
 import 'react-widgets/scss/styles.scss';
 import './BookForm.scss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import { addBookAsync } from '../../redux/books/BooksSlice';
 
@@ -10,12 +10,11 @@ function BookForm() {
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
-  const books = useSelector((state) => state.book.books);
 
   const submitHandler = (e) => {
-    const id = books.length + 1;
+    const id = Math.floor(Math.random() * 100000);
     dispatch(addBookAsync({
-      item_id: `book-${id}`,
+      item_id: `book-${id + 1}`,
       title,
       author,
       category,

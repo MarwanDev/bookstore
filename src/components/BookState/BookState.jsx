@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './BookState.scss';
-// import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
 
 function BookState({
-  id,
+  bookId,
   title,
   author,
   category,
@@ -24,7 +23,7 @@ function BookState({
         </h4>
         <ul className="options-container">
           <li><button type="button">Comments</button></li>
-          <li><button type="button" onClick={onClick} id={id}>Remove</button></li>
+          <li><button type="button" onClick={onClick} id={bookId}>Remove</button></li>
           <li><button type="button">Edit</button></li>
         </ul>
       </div>
@@ -65,13 +64,13 @@ function BookState({
 BookState.defaultProps = {
   title: '',
   author: '',
-  id: '',
+  bookId: '',
   onClick: '',
   category: '',
 };
 
 BookState.propTypes = {
-  id: PropTypes.string,
+  bookId: PropTypes.string,
   title: PropTypes.string,
   author: PropTypes.string,
   category: PropTypes.string,

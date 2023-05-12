@@ -9,20 +9,24 @@ import './Books.scss';
 function Books() {
   const books = useSelector((state) => state.book.books);
   const { Loading, error } = useSelector((state) => state.book);
-
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getBooksAsync());
   }, [dispatch]);
 
+  const booksList = Object.entries(books).map(([id, books]) => {
+    const [item] = books;
+    return { id, ...item };
+  });
+
+  const clickHandler = (e) => {
+    dispatch(deleteBookAsync(e.target.id));
+  };
+
   if (Loading) return (<h4>Loading...</h4>);
 
   if (error) return (<h5>Error!!</h5>);
-
-  const booksList = Object.entries(books).map(([id, items]) => {
-    const [item] = items;
-    return { id, ...item };
-  });
   return (
     <>
       <div className="books-container">
@@ -32,8 +36,8 @@ function Books() {
             title={book.title}
             author={book.author}
             category={book.category}
-            id={book.id}
-            onClick={(e) => dispatch(deleteBookAsync(e.target.id))}
+            bookId={book.id}
+            onClick={clickHandler}
           />
         ))}
       </div>
