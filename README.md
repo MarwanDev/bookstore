@@ -7,7 +7,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,10 +54,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-<!--
+
 ## 🚀 Live Demo <a name="live-demo"></a>
-### Coming Soon
--->
+### Click <a href="https://6477881c3e53bf00c95a0b01--storied-rabanadas-9ae90a.netlify.app/">here</a> for  the live demo 😀
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
